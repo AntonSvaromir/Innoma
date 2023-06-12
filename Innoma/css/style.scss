@@ -324,14 +324,19 @@ html, body {
 .marketswork__mixitup-btns {
    display: flex;
    justify-content: space-between;
+   background: #CFDDEB;
+   margin-bottom: 60px;
 }
 .marketswork__mixitup-btn {
    @include fontwsh(400, 20px, 60px);
    text-align: center;
    color: #484848;
-   width: 304px;
+   width: 306px;
    padding: 5px 0;
-   margin-bottom: 60px;
+   margin-right: 1px;
+   &:last-child {
+      margin-right: 0;
+   }
 }
 
 .marketswork__mixitup-btn--active {
@@ -339,7 +344,6 @@ html, body {
    border-radius: 5px;
 }
 .marketswork__mixitup__container {
-
 }
 
 .mix {
@@ -475,4 +479,64 @@ html, body {
 .category-c {
 }
 .category-d {
+}
+
+// =========================== ABOUT =======================
+// =========================== ABOUT =======================
+
+.about {
+   margin-bottom: 100px;
+}
+
+.about__inener {
+}
+.about__title {
+   @include fontwsh(700, 36px, 80px);
+   color: #1178B2;
+   margin-bottom: 15px;
+}
+.about__text {
+   @include fontwsh(300, 20px, 30px);
+   color: #000000;
+   margin-bottom: 20px;
+}
+.about__list {
+   display: flex;
+   justify-content: space-between;
+}
+.about__item {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 392px;
+   height: 284px;
+   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+   border-radius: 10px;
+   margin-right: 20px;
+   &:last-child {
+      margin-right: 0;
+   }
+}
+.about__item-number {
+   @include fontwsh(800, 120px, 100px);
+   font-family: 'Inter';
+   text-align: center;
+   background: linear-gradient(143.71deg, #8BD7DC 21.17%, #1246A9 127.82%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-fill-color: transparent;
+   margin-bottom: 23px;
+}
+.about__item-title {
+   @include fontwsh(500, 20px, 24px);
+   text-align: center;
+   color: #232323;
+}
+.about__item-img {
+   display: block;
+   margin-bottom: 30px;
+}
+.about__video {
 }
